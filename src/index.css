@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.activeBG {
+    @apply bg-gradient-to-r from-[#0094ff05] to-[#0094ff26]
+    }
