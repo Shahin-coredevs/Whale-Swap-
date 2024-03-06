@@ -6,10 +6,6 @@ const DropDown = ({ data = [], getValue, type = "" }) => {
   const [selected, setSelected] = useState("Months");
   const [isVisible, setIsVisible] = useState(false);
 
-
-  
- 
-
   useEffect(() => {
     if (type == "action") getValue(selected);
   }, [selected]);
@@ -18,13 +14,13 @@ const DropDown = ({ data = [], getValue, type = "" }) => {
     <div className="relative">
       <div
         onClick={() => setIsVisible(!isVisible)}
-        className="min-w-28 justify-between flex gap-2 text-white py-2 px-1 cursor-pointer"
+        className=" min-w-36 justify-between flex gap-2 text-white py-2 px-1 cursor-pointer"
       >
         {selected}
         <img src={downArrow} alt="" />
       </div>
       {isVisible && (
-        <div className="absolute w-full top-10 right-40 bg-[#1E2033] shadow shadow-[#0000004d] rounded-lg px-3 py-2">
+        <div className="absolute w-full bg-sidebg z-10 top-10 right-40 rounded-lg px-3 py-2">
           {data?.map((item, index) => {
             return (
               <div

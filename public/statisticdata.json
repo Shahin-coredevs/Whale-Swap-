@@ -3,140 +3,160 @@
         "Username": "John",
         "TotalReferral": 2042,
         "TotalEarning": 2147.24,
-        "month": "June",
-        "rank": 1
+        "Month": "June",
+        "Rank": 1,
+        "JoiningDate": "2023-04-15"
     },
     {
         "Username": "Alice",
         "TotalReferral": 1987,
         "TotalEarning": 2075.52,
-        "month": "July",
-        "rank": 2
+        "Month": "July",
+        "Rank": 2,
+        "JoiningDate": "2022-11-20"
     },
     {
         "Username": "Ethan",
         "TotalReferral": 2056,
         "TotalEarning": 2198.76,
-        "month": "August",
-        "rank": 3
+        "Month": "August",
+        "Rank": 3,
+        "JoiningDate": "2023-01-10"
     },
     {
         "Username": "Sophia",
         "TotalReferral": 2098,
         "TotalEarning": 2234.61,
-        "month": "September",
-        "rank": 4
+        "Month": "September",
+        "Rank": 4,
+        "JoiningDate": "2023-06-25"
     },
     {
         "Username": "Liam",
         "TotalReferral": 2033,
         "TotalEarning": 2165.34,
-        "month": "October",
-        "rank": 5
+        "Month": "October",
+        "Rank": 5,
+        "JoiningDate": "2022-09-08"
     },
     {
         "Username": "Olivia",
         "TotalReferral": 2076,
         "TotalEarning": 2210.17,
-        "month": "November",
-        "rank": 6
+        "Month": "November",
+        "Rank": 6,
+        "JoiningDate": "2023-02-14"
     },
     {
         "Username": "Noah",
         "TotalReferral": 2085,
         "TotalEarning": 2136.49,
-        "month": "December",
-        "rank": 7
+        "Month": "December",
+        "Rank": 7,
+        "JoiningDate": "2023-03-19"
     },
     {
         "Username": "Ava",
         "TotalReferral": 2072,
         "TotalEarning": 2199.24,
-        "month": "January",
-        "rank": 8
+        "Month": "January",
+        "Rank": 8,
+        "JoiningDate": "2022-12-05"
     },
     {
         "Username": "Mason",
         "TotalReferral": 2083,
         "TotalEarning": 2220.89,
-        "month": "February",
-        "rank": 9
+        "Month": "February",
+        "Rank": 9,
+        "JoiningDate": "2023-05-10"
     },
     {
         "Username": "Isabella",
         "TotalReferral": 2069,
         "TotalEarning": 2178.41,
-        "month": "March",
-        "rank": 10
+        "Month": "March",
+        "Rank": 10,
+        "JoiningDate": "2023-08-27"
     },
     {
         "Username": "James",
         "TotalReferral": 2074,
         "TotalEarning": 2214.73,
-        "month": "April",
-        "rank": 11
+        "Month": "April",
+        "Rank": 11,
+        "JoiningDate": "2023-07-03"
     },
     {
         "Username": "Charlotte",
         "TotalReferral": 2023,
         "TotalEarning": 2120.67,
-        "month": "May",
-        "rank": 12
+        "Month": "May",
+        "Rank": 12,
+        "JoiningDate": "2022-10-15"
     },
     {
         "Username": "Benjamin",
         "TotalReferral": 2019,
         "TotalEarning": 2145.98,
-        "month": "June",
-        "rank": 13
+        "Month": "June",
+        "Rank": 13,
+        "JoiningDate": "2022-08-21"
     },
     {
         "Username": "Amelia",
         "TotalReferral": 2054,
         "TotalEarning": 2205.11,
-        "month": "July",
-        "rank": 14
+        "Month": "July",
+        "Rank": 14,
+        "JoiningDate": "2022-07-07"
     },
     {
         "Username": "William",
         "TotalReferral": 2088,
         "TotalEarning": 2236.25,
-        "month": "August",
-        "rank": 15
+        "Month": "August",
+        "Rank": 15,
+        "JoiningDate": "2023-01-30"
     },
     {
         "Username": "Emma",
         "TotalReferral": 2095,
         "TotalEarning": 2217.49,
-        "month": "September",
-        "rank": 16
+        "Month": "September",
+        "Rank": 16,
+        "JoiningDate": "2023-04-02"
     },
     {
         "Username": "Alexander",
         "TotalReferral": 2049,
         "TotalEarning": 2185.92,
-        "month": "October",
-        "rank": 17
+        "Month": "October",
+        "Rank": 17,
+        "JoiningDate": "2022-11-29"
     },
     {
         "Username": "Harper",
         "TotalReferral": 2079,
         "TotalEarning": 2163.27,
-        "month": "November",
-        "rank": 18
+        "Month": "November",
+        "Rank": 18,
+        "JoiningDate": "2023-02-09"
     },
     {
         "Username": "Michael",
         "TotalReferral": 2038,
         "TotalEarning": 2191.84,
-        "month": "December",
-        "rank": 19
+        "Month": "December",
+        "Rank": 19,
+        "JoiningDate": "2023-05-17"
     },
     {
         "Username": "Evelyn",
         "TotalReferral": 2076,
         "TotalEarning": 2150.36,
-        "month": "January",
-        "rank": 20
+        "Month": "January",
+        "Rank": 20,
+        "JoiningDate": "2022-09-30"
     }
 ]

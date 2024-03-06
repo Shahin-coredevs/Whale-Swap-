@@ -20,7 +20,7 @@ const ReferralStatistics = () => {
       });
   }, [filter]);
   return (
-    <div className="bg-BGColor">
+    <div className="bg-BGColor ">
       <div className="my-5 h-10 flex justify-between items-center px-2">
         <h1 className="text-White text-lg">Referral Statistics</h1>
         <div className="">

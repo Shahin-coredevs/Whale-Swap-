@@ -1,8 +1,13 @@
 import Chart from "react-apexcharts";
+import DropDown from "../../Shared/Dropdown/Dropdown";
+import { months } from "../../../data";
 
 const LineCharts = () => {
   const options = {
     xaxis: {
+      axisTicks: {
+        show: false,
+      },
       categories: [
         "Jan",
         "Feb",
@@ -24,51 +29,20 @@ const LineCharts = () => {
     dataLabels: {
       enabled: false,
     },
-    row: {
-      opacity: 0.1,
-      width: "1px",
-    },
-    column: {
-      opacity: 0.05,
-      width: "1px",
-    },
     legend: {
-      show: true,
-      position: "top",
-      horizontalAlign: "right",
-      fontSize: "18px",
-      fontWeight: 400,
-      radius: 12,
+      show: false,
     },
     chart: {
       toolbar: {
         show: false,
       },
     },
-    pattern: {
-      width: 3,
-      height: 3,
-      strokeWidth: 1,
-    },
   };
 
   const series1 = [
     {
       name: "trade Buy",
-      data: [
-        "18",
-        "23",
-        "29",
-        "7",
-        "18",
-        "16",
-        "22",
-        "8",
-        "29",
-        "6",
-        "11",
-        "26",
-      ],
+      data: [18, 23, 29, 7, 18, 16, 22, 8, 29, 6, 11, 26],
     },
     {
       name: "trade Sell",
@@ -77,14 +51,33 @@ const LineCharts = () => {
   ];
 
   return (
-    <div className="">
-      <Chart
-        lebel={false}
-        options={options}
-        series={series1}
-        type="bar"
-        height="400px"
-      />
+    <div>
+      <div className="my-5 h-10 flex justify-between items-center px-2">
+        <h1 className="text-White text-lg">Referral Statistics</h1>
+
+        <div className="flex justify-end items-center gap-5 text-White">
+          <div className="flex justify-between gap-2 items-center">
+            <div className="bg-[#0580d9] w-2 h-2 rounded-full"></div>
+            <p className="text-[#0580d9]">Trade Sell</p>
+          </div>
+          <div className="flex justify-between gap-2 items-center">
+            <div className="bg-[#00c0cf] w-2 h-2 rounded-full"></div>
+            <p className="text-[#00c0cf]">Trade Buy</p>
+          </div>
+          {
+            <DropDown
+              data={months}
+              type="action"
+              getValue={(e) => {
+                console.log(e);
+              }}
+            />
+          }
+        </div>
+      </div>
+      <div className="">
+        <Chart options={options} series={series1} type="bar" height="400px" />
+      </div>
     </div>
   );
 };

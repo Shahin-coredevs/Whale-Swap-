@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
-
 import { useState } from "react";
 import Pagination from "../../Shared/Pagination";
 
-const StatisticsTable = ({ data, tableHeader }) => {
+const UserTable = ({ data, tableHeader }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -16,8 +15,8 @@ const StatisticsTable = ({ data, tableHeader }) => {
   };
 
   return (
-    <div className="h-[884px]">
-      <table className="w-full  text-sm text-left  text-White h-full">
+    <div className="">
+      <table className="w-full  text-sm text-left  text-White ">
         <thead className="text-xl mb-5">
           <tr>
             {tableHeader.map((e) => {
@@ -29,9 +28,8 @@ const StatisticsTable = ({ data, tableHeader }) => {
           {currentData?.map((d) => {
             return (
               <tr className="border-b-2 border-slate-800">
-                <td className="px-6 py-6">{d?.Rank}</td>
                 <td className="px-6 py-6">{d?.Username}</td>
-                <td className="px-6 py-6">{d?.TotalReferral}</td>
+                <td className="px-6 py-6">{d?.JoiningDate}</td>
                 <td className="px-6 py-6">${d?.TotalEarning}</td>
               </tr>
             );
@@ -49,4 +47,4 @@ const StatisticsTable = ({ data, tableHeader }) => {
   );
 };
 
-export default StatisticsTable;
+export default UserTable;
