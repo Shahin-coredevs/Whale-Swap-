@@ -5,3 +5,30 @@
 .activeBG {
     @apply bg-gradient-to-r from-[#0094ff05] to-[#0094ff26]
     }
+    input[type="checkbox"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #0094FF;
+        border-radius: 4px;
+        padding: 3px;
+        background-color: #141C29;        ;
+    }
+    
+    input[type="checkbox"]:checked {
+        background-color: #0094FF;
+        position: relative;
+    }
+    input[type="checkbox"]:checked::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 4px;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        height: 12px;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        transform: rotate(45deg);
+    }
+    

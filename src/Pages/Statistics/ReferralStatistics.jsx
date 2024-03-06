@@ -6,7 +6,7 @@ import StatisticsTable from "./StatisticsTable";
 const ReferralStatistics = () => {
   const [data, setData] = useState([]);
   const [filter, setfilter] = useState(data);
-
+  const tableHeader = ["Rank", "User Name", "Total Referral", "Total Earning"];
   useEffect(() => {
     fetch("statisticdata.json")
       .then((res) => res.json())
@@ -36,7 +36,7 @@ const ReferralStatistics = () => {
         </div>
       </div>
       <div className="">
-        <StatisticsTable data={data} />
+        <StatisticsTable tableHeader={tableHeader} data={data} />
       </div>
     </div>
   );

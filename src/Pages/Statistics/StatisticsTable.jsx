@@ -1,10 +1,22 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
 
-const tableHeader = ["Rank", "User Name", "Total Referral", "Total Earning"];
-const StatisticsTable = ({ data }) => {
+import { useState } from "react";
+import Pagination from "../../Shared/Pagination";
+
+const StatisticsTable = ({ data, tableHeader }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5;
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentData = data.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(data.length / itemsPerPage);
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
-    <div className="overflow-auto h-[500px]">
+    <div className="h-[500px]">
       <table className="w-full  text-sm text-left  text-White ">
         <thead className="text-xl mb-5">
           <tr>
@@ -14,10 +26,10 @@ const StatisticsTable = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data?.map((d, index) => {
+          {currentData?.map((d) => {
             return (
               <tr className="border-b-2 border-slate-800">
-                <td className="px-6 py-6">{index + 1}</td>
+                <td className="px-6 py-6">{d?.rank}</td>
                 <td className="px-6 py-6">{d?.Username}</td>
                 <td className="px-6 py-6">{d?.TotalReferral}</td>
                 <td className="px-6 py-6">${d?.TotalEarning}</td>
@@ -26,6 +38,13 @@ const StatisticsTable = ({ data }) => {
           })}
         </tbody>
       </table>
+      <div className="w-full flex justify-end mr-5 text-White">
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
+      </div>
     </div>
   );
 };
